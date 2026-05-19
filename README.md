@@ -1,50 +1,56 @@
-# Looking For Group - a LFG Addon for Project Epoch
+# Ashen LFG
 
-Trying to maintain any errors in this but happy to have someone else develop it further
+Ashen LFG is an in-game group finder addon for forming dungeon groups and filling missing roles.
 
-Important note: Remove -main when extracting into your interface/addons folder and fully restart your client after each update!
+## Installation
 
-## What it does NOT do ####
-This addon will not teleport you and your group inside the dungeon.
+Place the addon in:
 
-## Large Public Test Stage ##
-If you encounter any lua errors or other addon problems please take a screenshot and send it to me (Shadowtoots) on Discord with a short explanation of what you were doing when you encountered the problem breaks your gameplay disable the addon until a new version comes out.
+```text
+Interface/AddOns/AshenBannerLFG
+```
 
-## Features ##
+The addon folder must contain `AshenBannerLFG.toc`. Fully restart the client after installing or updating.
 
-### Minimap Button ###
-Brings up the main addon frame, allowing you to Look for a group or Look for more.<Br>
-![minimap](https://imgur.com/Z1uRxqz.png)
+## What it does
 
-### Queueing solo (maximum 5 dungeons at a time) ###
-![image](https://github.com/user-attachments/assets/9fabf9b4-a932-4d9a-9e15-21a219b70adc)
+- Lets players queue for available dungeons.
+- Shows current queue status from the minimap button.
+- Helps leaders find more members for an existing group.
+- Runs role checks for tank, healer, and damage roles.
+- Shows a ready check when a group is formed.
+- Tracks dungeon objectives during a run.
 
-### InQueue Minimap Tooltip ###
-Once queued, you can check your queue status by hovering over the minimap icon.<br>
-![image](https://github.com/user-attachments/assets/a2c30b20-4ea3-460c-8f05-cce405b3fed0)
+## What it does not do
 
-### Group Formed ####
-When a group is found you will be prompted with this readycheck.<br>
-The button will become available once all 5 members of the group are in.<br>
-![queuesolo](https://imgur.com/9rHbnfQ.png)
+Ashen LFG does not teleport players into dungeons or automate dungeon travel.
 
-### Ready Check ###
-Clicking *Let's do this!* on the ready check will show you the readycheck status of your group.<br>
-![queuesolo](https://imgur.com/1h3FDYG.png)
+## Features
 
-### Dungeon Status ###
-Once every member of your group is ready you will get a list of dungeon objectives, based on which dungeon your group decided to face.<br>
-Once all objectives are met, the dungeon is considered complete, and the window will close.<br>
-_Note:_ objectives can be moved, collapsed, or closed.<br>
-![queuesolo](https://imgur.com/UGRDmzm.png)
+### Minimap Button
 
-### Find More ###
-As a leader of a group you can look for more members.<br>
-_Note:_ the default 5man group role composition(only one tank, only one healer, no more than 3 dps) must be met in order to look for more. This is limited to one dungeon at a time.<Br>
-![image](https://github.com/user-attachments/assets/9fabf9b4-a932-4d9a-9e15-21a219b70adc)
+Opens the main addon frame and shows queue status while queued.
 
-### Role Check ###
-Once the leader clicks find more, a role check will be initiated and when the addon finds the missing roles you will be prompted with a Group Formed window.<br>
-![queuesolo](https://imgur.com/62LdVAT.png)
+### Solo Queue
 
-_Note: addon communications are made in LFG chat channel, don't manually leave or check it in your main chat frame, its very spammy!_<Br>
+Players can queue for up to five dungeons at a time.
+
+### Find More
+
+Group leaders can look for missing members while preserving the expected group role composition.
+
+### Role Check
+
+When filling a group, the addon prompts members to confirm their role.
+
+### Group Formed
+
+When a group is ready, the addon displays a ready check and shows each member's status.
+
+### Dungeon Status
+
+After everyone is ready, the addon can show dungeon objectives. Objective windows can be moved, collapsed, or closed.
+
+## Notes
+
+Addon communication uses the `LFG` chat channel. Leave that channel enabled for group-finder messages to work correctly.

@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: Ashen LFG |cffff5555[BETA]
+## Author: Xerron/Er (Original - LFT) | Ported by Shadowtoots (LFG)
+## Version: 0.0.1.0
+## Notes: Ashen LFG Addon for Project Epoch / WoW 1.12 Lua 5.0
+## SavedVariables: LFG_FORMED_GROUPS
+## SavedVariablesPerCharacter: LFG_ROLE, LFG_TYPE, LFG_CONFIG
+ChatThrottleLib\ChatThrottleLib.lua
+LFG.xml
