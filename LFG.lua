@@ -5,7 +5,7 @@ local _G, _ = _G or getfenv()
 
 local LFG = CreateFrame("Frame")
 local me = UnitName('player')
-local addonVer = GetAddOnMetadata("AshenBannerLFG", "Version") or GetAddOnMetadata("LFG", "Version")
+local addonVer = GetAddOnMetadata("AshenLFG", "Version") or GetAddOnMetadata("LFG", "Version")
 local LFG_ADDON_CHANNEL = 'LFG'
 local groupsFormedThisSession = 0
 
@@ -330,7 +330,7 @@ LFGMinimapAnimation:SetScript("OnShow", function()
     this.frameIndex = 0
 end)
 LFGMinimapAnimation:SetScript("OnHide", function()
-    _G['LFG_MinimapEye']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\eye\\battlenetworking0')
+    _G['LFG_MinimapEye']:SetTexture('Interface\\Addons\\AshenLFG\\images\\eye\\battlenetworking0')
 end)
 
 LFGMinimapAnimation:SetScript("OnUpdate", function()
@@ -345,7 +345,7 @@ LFGMinimapAnimation:SetScript("OnUpdate", function()
             this.frameIndex = 0
         end
 
-        _G['LFG_MinimapEye']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\eye\\battlenetworking' .. this.frameIndex)
+        _G['LFG_MinimapEye']:SetTexture('Interface\\Addons\\AshenLFG\\images\\eye\\battlenetworking' .. this.frameIndex)
 
         this.startTime = GetTime()
 
@@ -518,7 +518,7 @@ LFGDungeonComplete:SetScript("OnUpdate", function()
         else
             frame = frame .. LFGDungeonComplete.frameIndex
         end
-        _G['LFGDungeonCompleteFrame']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\dungeon_complete\\dungeon_complete_' .. frame)
+        _G['LFGDungeonCompleteFrame']:SetTexture('Interface\\Addons\\AshenLFG\\images\\dungeon_complete\\dungeon_complete_' .. frame)
         if LFGDungeonComplete.frameIndex < 35 then
             _G['LFGDungeonComplete']:SetAlpha(_G['LFGDungeonComplete']:GetAlpha() + 0.03)
         end
@@ -528,7 +528,7 @@ LFGDungeonComplete:SetScript("OnUpdate", function()
         if LFGDungeonComplete.frameIndex >= 150 then
             _G['LFGDungeonComplete']:Hide()
             _G['LFGDungeonStatus']:Hide()
-            _G['LFGDungeonCompleteFrame']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\dungeon_complete\\dungeon_complete_00')
+            _G['LFGDungeonCompleteFrame']:SetTexture('Interface\\Addons\\AshenLFG\\images\\dungeon_complete\\dungeon_complete_00')
             LFGDungeonComplete:Hide()
 
             local index = 0
@@ -726,7 +726,7 @@ LFGRoleCheck:SetScript("OnHide", function()
         if LFG.findingMore then
         else
             lfprint('A member of your group has not confirmed his role.')
-            PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\lfg_denied.ogg")
+            PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\lfg_denied.ogg")
             _G['findMoreButton']:Enable()
         end
     end
@@ -961,7 +961,7 @@ LFGComms:SetScript("OnEvent", function()
             end
             if string.sub(arg2, 1, 11) == 'notReadyAs:' then
 
-                PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\lfg_denied.ogg")
+                PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\lfg_denied.ogg")
 
                 local readyEx = StringSplit(arg2, ':')
                 local role = readyEx[2]
@@ -1064,8 +1064,8 @@ LFGComms:SetScript("OnEvent", function()
 
                 LFG.SetSingleRole(myRole)
 
-                _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\background\\ui-lfg-background-' .. background)
-                _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. myRole .. '2')
+                _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenLFG\\images\\background\\ui-lfg-background-' .. background)
+                _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. myRole .. '2')
                 _G['LFGGroupReadyMyRole']:SetText(LFG.ucFirst(myRole))
                 _G['LFGGroupReadyDungeonName']:SetText(dungeonName)
                 _G['LFGGroupReadyObjectivesCompleted']:SetText(objectivesCompleted .. '/' .. objectivesTotal .. ' Bosses Defeated')
@@ -1077,7 +1077,7 @@ LFGComms:SetScript("OnEvent", function()
                 LFG.fixMainButton()
                 _G['LFGlfg']:Hide()
 
-                PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\levelup2.ogg")
+                PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\levelup2.ogg")
                 LFGQueue:Hide()
 
                 if LFG.isLeader then
@@ -1099,7 +1099,7 @@ LFGComms:SetScript("OnEvent", function()
                 }
 
                 if arg4 ~= me then
-                    PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\lfg_rolecheck.ogg")
+                    PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\lfg_rolecheck.ogg")
                 end
                 lfprint('A role check has been initiated. Your group will be queued when all members have selected a role.')
                 UIErrorsFrame:AddMessage("|cff69ccf0[LFG] |cffffff00A role check has been initiated. Your group will be queued when all members have selected a role.")
@@ -1329,7 +1329,7 @@ LFGComms:SetScript("OnEvent", function()
                 LFG.checkLFMgroup()
             end
             if string.sub(arg2, 1, 12) == 'declineRole:' then
-                PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\lfg_denied.ogg")
+                PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\lfg_denied.ogg")
                 LFG.checkLFMgroup(arg4)
             end
         end
@@ -1469,8 +1469,8 @@ LFGComms:SetScript("OnEvent", function()
 
             local myRole = LFG.dungeons[LFG.dungeonNameFromCode(LFG.groupFullCode)].myRole
 
-            _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\background\\ui-lfg-background-' .. background)
-            _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. myRole .. '2')
+            _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenLFG\\images\\background\\ui-lfg-background-' .. background)
+            _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. myRole .. '2')
             _G['LFGGroupReadyMyRole']:SetText(LFG.ucFirst(myRole))
             _G['LFGGroupReadyDungeonName']:SetText(dungeonName)
 
@@ -1484,7 +1484,7 @@ LFGComms:SetScript("OnEvent", function()
             LFGGroupReadyFrameCloser:Show()
             _G['LFGRoleCheck']:Hide()
 
-            PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\levelup2.ogg")
+            PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\levelup2.ogg")
             LFGQueue:Hide()
 
             LFG.findingGroup = false
@@ -1833,14 +1833,14 @@ end
 
 LFG:SetScript("OnEvent", function()
     if event then
-        if ((event == "ADDON_LOADED" and (arg1 == 'AshenBannerLFG' or arg1 == 'LFG')) or event == "VARIABLES_LOADED") and not LFG.initialized then
+        if ((event == "ADDON_LOADED" and (arg1 == 'AshenLFG' or arg1 == 'LFG')) or event == "VARIABLES_LOADED") and not LFG.initialized then
             LFG.initialized = true
             LFG.init()
         end
         if event == "PLAYER_TARGET_CHANGED" and LFG.inGroup then
             if _G['TargetFrame']:IsVisible() then
                 if LFG.currentGroupRoles[UnitName('target')] then
-                    _G['LFGPartyRoleIconsTarget']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. LFG.currentGroupRoles[UnitName('target')] .. '_small')
+                    _G['LFGPartyRoleIconsTarget']:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. LFG.currentGroupRoles[UnitName('target')] .. '_small')
                     _G['LFGPartyRoleIconsTarget']:Show()
                 end
             else
@@ -2205,7 +2205,7 @@ end
 function LFG.init()
 
     LFG_UpdatePlayerInfo()
-    addonVer = GetAddOnMetadata("AshenBannerLFG", "Version") or GetAddOnMetadata("LFG", "Version") or addonVer or '0.0.0.0'
+    addonVer = GetAddOnMetadata("AshenLFG", "Version") or GetAddOnMetadata("LFG", "Version") or addonVer or '0.0.0.0'
 
     if not LFG_CONFIG then
         LFG_CONFIG = {}
@@ -2440,8 +2440,8 @@ LFGQueue:SetScript("OnUpdate", function()
                         end
                     end
 
-                    _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\background\\ui-lfg-background-' .. background)
-                    _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. LFG_ROLE .. '2')
+                    _G['LFGGroupReadyBackground']:SetTexture('Interface\\Addons\\AshenLFG\\images\\background\\ui-lfg-background-' .. background)
+                    _G['LFGGroupReadyRole']:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. LFG_ROLE .. '2')
                     _G['LFGGroupReadyMyRole']:SetText(LFG.ucFirst(LFG_ROLE))
                     _G['LFGGroupReadyDungeonName']:SetText(dungeonName)
                     _G['LFGGroupReadyAwesome']:SetText('Let\'s do this!')
@@ -2453,7 +2453,7 @@ LFGQueue:SetScript("OnUpdate", function()
 
                     _G['LFGRoleCheck']:Hide()
 
-                    PlaySoundFile("Interface\\Addons\\AshenBannerLFG\\sound\\levelup2.ogg")
+                    PlaySoundFile("Interface\\Addons\\AshenLFG\\sound\\levelup2.ogg")
                     LFGQueue:Hide()
 
                     LFG.fixMainButton()
@@ -3311,7 +3311,7 @@ end
 
 function LFG.showMyRoleIcon(myRole)
     if _G['PlayerPortrait']:IsVisible() then
-        _G['LFGPartyRoleIconsPlayer']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. myRole .. '_small')
+        _G['LFGPartyRoleIconsPlayer']:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. myRole .. '_small')
         _G['LFGPartyRoleIconsPlayer']:Show()
     else
         _G['LFGPartyRoleIconsPlayer']:Hide()
@@ -3323,7 +3323,7 @@ function LFG.showPartyRoleIcons(role, name)
         for i = 1, 4 do
             if _G['PartyMemberFrame' .. i .. 'Portrait']:IsVisible() then
                 if LFG.currentGroupRoles[UnitName('party' .. i)] then
-                    _G['LFGPartyRoleIconsParty' .. i]:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. LFG.currentGroupRoles[UnitName('party' .. i)] .. '_small')
+                    _G['LFGPartyRoleIconsParty' .. i]:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. LFG.currentGroupRoles[UnitName('party' .. i)] .. '_small')
                     _G['LFGPartyRoleIconsParty' .. i]:Show()
                 end
             else
@@ -3336,7 +3336,7 @@ function LFG.showPartyRoleIcons(role, name)
     for i = 1, GetNumPartyMembers() do
         if UnitName('party' .. i) == name then
             if _G['PartyMemberFrame' .. i .. 'Portrait']:IsVisible() then
-                _G['LFGPartyRoleIconsParty' .. i]:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\' .. role .. '_small')
+                _G['LFGPartyRoleIconsParty' .. i]:SetTexture('Interface\\Addons\\AshenLFG\\images\\' .. role .. '_small')
                 _G['LFGPartyRoleIconsParty' .. i]:Show()
             else
                 _G['LFGPartyRoleIconsParty' .. i]:Hide()
@@ -3883,19 +3883,19 @@ function LFG.resetFormedGroups()
 end
 
 function LFG.readyStatusReset()
-    _G['LFGReadyStatusReadyTank']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting')
-    _G['LFGReadyStatusReadyHealer']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting')
-    _G['LFGReadyStatusReadyDamage1']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting')
-    _G['LFGReadyStatusReadyDamage2']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting')
-    _G['LFGReadyStatusReadyDamage3']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting')
+    _G['LFGReadyStatusReadyTank']:SetTexture('Interface\\Addons\\AshenLFG\\images\\readycheck-waiting')
+    _G['LFGReadyStatusReadyHealer']:SetTexture('Interface\\Addons\\AshenLFG\\images\\readycheck-waiting')
+    _G['LFGReadyStatusReadyDamage1']:SetTexture('Interface\\Addons\\AshenLFG\\images\\readycheck-waiting')
+    _G['LFGReadyStatusReadyDamage2']:SetTexture('Interface\\Addons\\AshenLFG\\images\\readycheck-waiting')
+    _G['LFGReadyStatusReadyDamage3']:SetTexture('Interface\\Addons\\AshenLFG\\images\\readycheck-waiting')
     LFG.readyResponses = {}
 end
 
 function LFG.markReadyStatus(role, ready, name)
-    local waitingTexture = 'Interface\\Addons\\AshenBannerLFG\\images\\readycheck-waiting'
-    local texture = 'Interface\\Addons\\AshenBannerLFG\\images\\readycheck-notready'
+    local waitingTexture = 'Interface\\Addons\\AshenLFG\\images\\readycheck-waiting'
+    local texture = 'Interface\\Addons\\AshenLFG\\images\\readycheck-notready'
     if ready then
-        texture = 'Interface\\Addons\\AshenBannerLFG\\images\\readycheck-ready'
+        texture = 'Interface\\Addons\\AshenLFG\\images\\readycheck-ready'
     end
 
     if not LFG.readyResponses then
@@ -3928,7 +3928,7 @@ function LFG.markReadyStatus(role, ready, name)
 end
 
 function LFG.readyStatusIsComplete()
-    local readyTexture = 'Interface\\Addons\\AshenBannerLFG\\images\\readycheck-ready'
+    local readyTexture = 'Interface\\Addons\\AshenLFG\\images\\readycheck-ready'
     return _G['LFGReadyStatusReadyTank']:GetTexture() == readyTexture and
             _G['LFGReadyStatusReadyHealer']:GetTexture() == readyTexture and
             _G['LFGReadyStatusReadyDamage1']:GetTexture() == readyTexture and
@@ -4208,7 +4208,7 @@ function LFG.LFGBrowse_Update()
                     LFG.browseFrames[data.code] = CreateFrame("Frame", "BrowseFrame_" .. data.code, _G["BrowseScrollFrameChildren"], "LFGBrowseDungeonTemplate")
                 end
 
-                _G['BrowseFrame_' .. data.code .. 'Background']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\background\\ui-lfg-background-' .. data.background)
+                _G['BrowseFrame_' .. data.code .. 'Background']:SetTexture('Interface\\Addons\\AshenLFG\\images\\background\\ui-lfg-background-' .. data.background)
                 _G['BrowseFrame_' .. data.code .. 'Background']:SetAlpha(0.7)
 
                 LFG.browseFrames[data.code]:Show()
@@ -4723,10 +4723,10 @@ function LFG_ShowMinimap()
 
             LFG.minimapFrames[dungeonCode]:Show()
             LFG.minimapFrames[dungeonCode]:SetPoint("TOP", _G["LFGGroupStatus"], "TOP", 0, -25 - 46 * (dungeonIndex))
-            _G['LFGMinimap_' .. dungeonCode .. 'Background']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\background\\ui-lfg-background-' .. background)
+            _G['LFGMinimap_' .. dungeonCode .. 'Background']:SetTexture('Interface\\Addons\\AshenLFG\\images\\background\\ui-lfg-background-' .. background)
             _G['LFGMinimap_' .. dungeonCode .. 'DungeonName']:SetText(dungeonName)
 
-            --_G['LFGMinimap_' .. dungeonCode .. 'MyRole']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\ready_' .. LFG_ROLE)
+            --_G['LFGMinimap_' .. dungeonCode .. 'MyRole']:SetTexture('Interface\\Addons\\AshenLFG\\images\\ready_' .. LFG_ROLE)
             _G['LFGMinimap_' .. dungeonCode .. 'MyRole']:Hide() -- hide for now  - dev
 
             if tank == 0 then
@@ -5095,7 +5095,7 @@ function LFGObjectives.objectiveComplete(bossName, dontSendToAll)
         local dungeonName, iconCode = LFG.dungeonNameFromCode(code)
         if LFGObjectives.objectivesComplete == LFG.tableSize(LFG.objectivesFrames) or
                 (code == 'brdarena' and LFGObjectives.objectivesComplete == 1) then
-            _G['LFGDungeonCompleteIcon']:SetTexture('Interface\\Addons\\AshenBannerLFG\\images\\icon\\lfgicon-' .. iconCode)
+            _G['LFGDungeonCompleteIcon']:SetTexture('Interface\\Addons\\AshenLFG\\images\\icon\\lfgicon-' .. iconCode)
             _G['LFGDungeonCompleteDungeonName']:SetText(dungeonName)
             LFGDungeonComplete.dungeonInProgress = false
             LFGDungeonComplete:Show()

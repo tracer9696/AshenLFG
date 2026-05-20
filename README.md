@@ -7,10 +7,10 @@ Ashen LFG is an in-game group finder addon for forming dungeon groups and fillin
 Place the addon in:
 
 ```text
-Interface/AddOns/AshenBannerLFG
+Interface/AddOns/AshenLFG
 ```
 
-The addon folder must contain `AshenBannerLFG.toc`. Fully restart the client after installing or updating.
+The addon folder must contain `AshenLFG.toc`. Fully restart the client after installing or updating.
 
 ## What it does
 

@@ -101,7 +101,7 @@
         <Layers>
             <Layer level="BORDER">
                 <Texture name="$parentBackground"
-                         file="Interface\Addons\AshenBannerLFG\images\background\ui-lfg-background-scarletmonastery">
+                         file="Interface\Addons\AshenLFG\images\background\ui-lfg-background-scarletmonastery">
                     <Size>
                         <AbsDimension x="175" y="45"/>
                     </Size>
@@ -115,7 +115,7 @@
                 </Texture>
             </Layer>
             <Layer level="ARTWORK">
-                <Texture name="$parentReadyIconTank" file="Interface\Addons\AshenBannerLFG\images\ready_tank">
+                <Texture name="$parentReadyIconTank" file="Interface\Addons\AshenLFG\images\ready_tank">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -127,7 +127,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentReadyIconHealer" file="Interface\Addons\AshenBannerLFG\images\ready_healer">
+                <Texture name="$parentReadyIconHealer" file="Interface\Addons\AshenLFG\images\ready_healer">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -139,7 +139,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentReadyIconDamage" file="Interface\Addons\AshenBannerLFG\images\ready_damage">
+                <Texture name="$parentReadyIconDamage" file="Interface\Addons\AshenLFG\images\ready_damage">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -152,7 +152,7 @@
                     </Anchors>
                 </Texture>
 
-                <Texture name="$parentMyRole" file="Interface\Addons\AshenBannerLFG\images\ready_damage">
+                <Texture name="$parentMyRole" file="Interface\Addons\AshenLFG\images\ready_damage">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -232,7 +232,7 @@
         </Anchors>
         <Layers>
             <Layer level="BACKGROUND">
-                <Texture name="$parentObjectiveComplete" file="Interface\Addons\AshenBannerLFG\images\objective_1">
+                <Texture name="$parentObjectiveComplete" file="Interface\Addons\AshenLFG\images\objective_1">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -244,7 +244,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentObjectivePending" file="Interface\Addons\AshenBannerLFG\images\objective_0">
+                <Texture name="$parentObjectivePending" file="Interface\Addons\AshenLFG\images\objective_0">
                     <Size>
                         <AbsDimension x="16" y="16"/>
                     </Size>
@@ -273,7 +273,7 @@
                     </Anchors>
                 </FontString>
 
-                <Texture name="$parentSwoosh" file="Interface\Addons\AshenBannerLFG\images\objective_complete_swoosh"
+                <Texture name="$parentSwoosh" file="Interface\Addons\AshenLFG\images\objective_complete_swoosh"
                          alphaMode="ADD">
                     <Size>
                         <AbsDimension x="256" y="32"/>
@@ -297,7 +297,7 @@
         <Layers>
             <Layer level="BORDER">
                 <Texture name="$parentBackground"
-                         file="Interface\Addons\AshenBannerLFG\images\background\ui-lfg-background-scarletmonastery">
+                         file="Interface\Addons\AshenLFG\images\background\ui-lfg-background-scarletmonastery">
                     <Size>
                         <AbsDimension x="315" y="40"/>
                     </Size>
@@ -327,7 +327,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <!--                <Texture name="$parentIconTank" file="Interface\Addons\AshenBannerLFG\images\ready_tank">-->
+                <!--                <Texture name="$parentIconTank" file="Interface\Addons\AshenLFG\images\ready_tank">-->
                 <!--                    <Size>-->
                 <!--                        <AbsDimension x="16" y="14"/>-->
                 <!--                    </Size>-->
@@ -339,7 +339,7 @@
                 <!--                        </Anchor>-->
                 <!--                    </Anchors>-->
                 <!--                </Texture>-->
-                <!--                <Texture name="$parentIconHealer" file="Interface\Addons\AshenBannerLFG\images\ready_healer">-->
+                <!--                <Texture name="$parentIconHealer" file="Interface\Addons\AshenLFG\images\ready_healer">-->
                 <!--                    <Size>-->
                 <!--                        <AbsDimension x="16" y="14"/>-->
                 <!--                    </Size>-->
@@ -351,7 +351,7 @@
                 <!--                        </Anchor>-->
                 <!--                    </Anchors>-->
                 <!--                </Texture>-->
-                <!--                <Texture name="$parentIconDamage" file="Interface\Addons\AshenBannerLFG\images\ready_damage">-->
+                <!--                <Texture name="$parentIconDamage" file="Interface\Addons\AshenLFG\images\ready_damage">-->
                 <!--                    <Size>-->
                 <!--                        <AbsDimension x="16" y="14"/>-->
                 <!--                    </Size>-->
@@ -445,7 +445,7 @@
                 </Anchors>
                 <Layers>
                     <Layer level="ARTWORK">
-                        <Texture name="$parentTexture" file="Interface\Addons\AshenBannerLFG\images\ready_tank">
+                        <Texture name="$parentTexture" file="Interface\Addons\AshenLFG\images\ready_tank">
                             <Size>
                                 <AbsDimension x="16" y="14"/>
                             </Size>
@@ -476,7 +476,7 @@
                 </Anchors>
                 <Layers>
                     <Layer level="ARTWORK">
-                        <Texture name="$parentTexture" file="Interface\Addons\AshenBannerLFG\images\ready_healer">
+                        <Texture name="$parentTexture" file="Interface\Addons\AshenLFG\images\ready_healer">
                             <Size>
                                 <AbsDimension x="16" y="14"/>
                             </Size>
@@ -507,7 +507,7 @@
                 </Anchors>
                 <Layers>
                     <Layer level="ARTWORK">
-                        <Texture name="$parentTexture" file="Interface\Addons\AshenBannerLFG\images\ready_damage">
+                        <Texture name="$parentTexture" file="Interface\Addons\AshenLFG\images\ready_damage">
                             <Size>
                                 <AbsDimension x="16" y="14"/>
                             </Size>
@@ -572,7 +572,7 @@
         <Layers>
             <Layer level="BORDER">
                 <Texture name="$parentBackground"
-                         file="Interface\Addons\AshenBannerLFG\images\background\ui-lfg-background-scarletmonastery">
+                         file="Interface\Addons\AshenLFG\images\background\ui-lfg-background-scarletmonastery">
                     <Size>
                         <AbsDimension x="288" y="128"/>
                     </Size>
@@ -586,7 +586,7 @@
                 </Texture>
             </Layer>
             <Layer level="ARTWORK">
-                <Texture name="$parentArtMiddle" file="Interface\Addons\AshenBannerLFG\images\dungeon_ready_middle">
+                <Texture name="$parentArtMiddle" file="Interface\Addons\AshenLFG\images\dungeon_ready_middle">
                     <Size>
                         <AbsDimension x="512" y="128"/>
                     </Size>
@@ -600,7 +600,7 @@
                 </Texture>
             </Layer>
             <Layer level="OVERLAY">
-                <Texture name="$parentSeparator" file="Interface\Addons\AshenBannerLFG\images\ui-lfg-separator">
+                <Texture name="$parentSeparator" file="Interface\Addons\AshenLFG\images\ui-lfg-separator">
                     <Size>
                         <AbsDimension x="256" y="128"/>
                     </Size>
@@ -612,7 +612,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentArtTop" file="Interface\Addons\AshenBannerLFG\images\dungeon_ready_top">
+                <Texture name="$parentArtTop" file="Interface\Addons\AshenLFG\images\dungeon_ready_top">
                     <Size>
                         <AbsDimension x="512" y="128"/>
                     </Size>
@@ -624,7 +624,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentRole" file="Interface\Addons\AshenBannerLFG\images\tank2">
+                <Texture name="$parentRole" file="Interface\Addons\AshenLFG\images\tank2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -776,7 +776,7 @@
             <Layer level="ARTWORK">
             </Layer>
             <Layer level="OVERLAY">
-                <Texture name="$parentRoleTank" file="Interface\Addons\AshenBannerLFG\images\tank2">
+                <Texture name="$parentRoleTank" file="Interface\Addons\AshenLFG\images\tank2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -788,7 +788,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentRoleHealer" file="Interface\Addons\AshenBannerLFG\images\healer2">
+                <Texture name="$parentRoleHealer" file="Interface\Addons\AshenLFG\images\healer2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -800,7 +800,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentRoleDamage" file="Interface\Addons\AshenBannerLFG\images\damage2">
+                <Texture name="$parentRoleDamage" file="Interface\Addons\AshenLFG\images\damage2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1073,7 +1073,7 @@
         </Backdrop>
         <Layers>
             <Layer level="BACKGROUND">
-                <Texture name="LFGDungeonCompleteIcon" file="Interface\Addons\AshenBannerLFG\images\icon\lfgicon-aqtemple">
+                <Texture name="LFGDungeonCompleteIcon" file="Interface\Addons\AshenLFG\images\icon\lfgicon-aqtemple">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1088,7 +1088,7 @@
             </Layer>
             <Layer level="ARTWORK">
                 <Texture name="LFGDungeonCompleteFrame"
-                         file="Interface\Addons\AshenBannerLFG\images\dungeon_complete\dungeon_complete_00">
+                         file="Interface\Addons\AshenLFG\images\dungeon_complete\dungeon_complete_00">
                     <Size>
                         <AbsDimension x="512" y="128"/>
                     </Size>
@@ -1160,7 +1160,7 @@
             <Layer level="BORDER">
             </Layer>
             <Layer level="ARTWORK">
-                <Texture name="LFGReadyStatusReadyCheckTank" file="Interface\Addons\AshenBannerLFG\images\tank2">
+                <Texture name="LFGReadyStatusReadyCheckTank" file="Interface\Addons\AshenLFG\images\tank2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1172,7 +1172,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyCheckHealer" file="Interface\Addons\AshenBannerLFG\images\healer2">
+                <Texture name="LFGReadyStatusReadyCheckHealer" file="Interface\Addons\AshenLFG\images\healer2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1184,7 +1184,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyCheckDamage1" file="Interface\Addons\AshenBannerLFG\images\damage2">
+                <Texture name="LFGReadyStatusReadyCheckDamage1" file="Interface\Addons\AshenLFG\images\damage2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1196,7 +1196,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyCheckDamage2" file="Interface\Addons\AshenBannerLFG\images\damage2">
+                <Texture name="LFGReadyStatusReadyCheckDamage2" file="Interface\Addons\AshenLFG\images\damage2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1208,7 +1208,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyCheckDamage3" file="Interface\Addons\AshenBannerLFG\images\damage2">
+                <Texture name="LFGReadyStatusReadyCheckDamage3" file="Interface\Addons\AshenLFG\images\damage2">
                     <Size>
                         <AbsDimension x="64" y="64"/>
                     </Size>
@@ -1222,7 +1222,7 @@
                 </Texture>
             </Layer>
             <Layer level="OVERLAY">
-                <Texture name="LFGReadyStatusReadyTank" file="Interface\Addons\AshenBannerLFG\images\readycheck-waiting">
+                <Texture name="LFGReadyStatusReadyTank" file="Interface\Addons\AshenLFG\images\readycheck-waiting">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1234,7 +1234,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyHealer" file="Interface\Addons\AshenBannerLFG\images\readycheck-waiting">
+                <Texture name="LFGReadyStatusReadyHealer" file="Interface\Addons\AshenLFG\images\readycheck-waiting">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1246,7 +1246,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyDamage1" file="Interface\Addons\AshenBannerLFG\images\readycheck-waiting">
+                <Texture name="LFGReadyStatusReadyDamage1" file="Interface\Addons\AshenLFG\images\readycheck-waiting">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1258,7 +1258,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyDamage2" file="Interface\Addons\AshenBannerLFG\images\readycheck-waiting">
+                <Texture name="LFGReadyStatusReadyDamage2" file="Interface\Addons\AshenLFG\images\readycheck-waiting">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1270,7 +1270,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="LFGReadyStatusReadyDamage3" file="Interface\Addons\AshenBannerLFG\images\readycheck-waiting">
+                <Texture name="LFGReadyStatusReadyDamage3" file="Interface\Addons\AshenLFG\images\readycheck-waiting">
                     <Size>
                         <AbsDimension x="42" y="42"/>
                     </Size>
@@ -1335,7 +1335,7 @@
         </Backdrop>
         <Layers>
             <Layer level="BORDER">
-                <Texture name="$parentTitleBackground" file="Interface\Addons\AshenBannerLFG\images\objective_title">
+                <Texture name="$parentTitleBackground" file="Interface\Addons\AshenLFG\images\objective_title">
                     <Size>
                         <AbsDimension x="512" y="64"/>
                     </Size>
@@ -1347,7 +1347,7 @@
                         </Anchor>
                     </Anchors>
                 </Texture>
-                <Texture name="$parentDungeonTextBackground" file="Interface\Addons\AshenBannerLFG\images\objective_dungeon">
+                <Texture name="$parentDungeonTextBackground" file="Interface\Addons\AshenLFG\images\objective_dungeon">
                     <Size>
                         <AbsDimension x="256" y="128"/>
                     </Size>
@@ -1377,7 +1377,7 @@
                     </Anchors>
                 </FontString>
                 <FontString name="$parentDungeonName" text="Scarlet Monastery Cathedral"
-                            font="Interface\Addons\AshenBannerLFG\fonts\MORPHEUS.TTF">
+                            font="Interface\Addons\AshenLFG\fonts\MORPHEUS.TTF">
                     <Color r="0.86" g="0.81" b="0.69" a=".9"/>
                     <FontHeight val="20"/>
                     <Shadow>
@@ -1400,8 +1400,8 @@
         <Frames>
 
             <Button name="$parentCollapseButton" hidden="false" inherits="UIPanelButtonTemplate" text="">
-                <NormalTexture file="Interface\Addons\AshenBannerLFG\images\objective_collapse"/>
-                <PushedTexture file="Interface\Addons\AshenBannerLFG\images\objective_collapse_pushed"/>
+                <NormalTexture file="Interface\Addons\AshenLFG\images\objective_collapse"/>
+                <PushedTexture file="Interface\Addons\AshenLFG\images\objective_collapse_pushed"/>
                 <Size>
                     <AbsDimension x="16" y="16"/>
                 </Size>
@@ -1419,8 +1419,8 @@
                 </Scripts>
             </Button>
             <Button name="$parentExpandButton" hidden="true" inherits="UIPanelButtonTemplate" text="">
-                <NormalTexture file="Interface\Addons\AshenBannerLFG\images\objective_expand"/>
-                <PushedTexture file="Interface\Addons\AshenBannerLFG\images\objective_expand_pushed"/>
+                <NormalTexture file="Interface\Addons\AshenLFG\images\objective_expand"/>
+                <PushedTexture file="Interface\Addons\AshenLFG\images\objective_expand_pushed"/>
                 <Size>
                     <AbsDimension x="16" y="16"/>
                 </Size>
@@ -1439,8 +1439,8 @@
             </Button>
 
             <Button name="$parentCloseButton" inherits="UIPanelCloseButton">
-                <NormalTexture file="Interface\Addons\AshenBannerLFG\images\objective_close"/>
-                <PushedTexture file="Interface\Addons\AshenBannerLFG\images\objective_close_pushed"/>
+                <NormalTexture file="Interface\Addons\AshenLFG\images\objective_close"/>
+                <PushedTexture file="Interface\Addons\AshenLFG\images\objective_close_pushed"/>
                 <Size>
                     <AbsDimension x="16" y="16"/>
                 </Size>
@@ -1568,7 +1568,7 @@
                 </Anchors>
                 <Layers>
                     <Layer level="BACKGROUND">
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-character-activetab">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-character-activetab">
                             <Size>
                                 <AbsDimension x="128" y="64"/>
                             </Size>
@@ -1581,7 +1581,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-character-inactivetab">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-character-inactivetab">
                             <Size>
                                 <AbsDimension x="128" y="32"/>
                             </Size>
@@ -1594,7 +1594,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-lfg-portrait">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-lfg-portrait">
                             <Size>
                                 <AbsDimension x="64" y="64"/>
                             </Size>
@@ -1606,7 +1606,7 @@
                                 </Anchor>
                             </Anchors>
                         </Texture>
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-lfg-background-dungeonwall">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-lfg-background-dungeonwall">
                             <Size>
                                 <AbsDimension x="512" y="256"/>
                             </Size>
@@ -1621,7 +1621,7 @@
                     </Layer>
                     <Layer level="ARTWORK">
                         <Texture name="LFGBrowseButtonHighlight" hidden="true"
-                                 file="Interface\Addons\AshenBannerLFG\images\ui-character-tab-realhighlight">
+                                 file="Interface\Addons\AshenLFG\images\ui-character-tab-realhighlight">
                             <Size>
                                 <AbsDimension x="128" y="32"/>
                             </Size>
@@ -1634,7 +1634,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture name="LFGFrame" file="Interface\Addons\AshenBannerLFG\images\ui-lfg-frame">
+                        <Texture name="LFGFrame" file="Interface\Addons\AshenLFG\images\ui-lfg-frame">
                             <Size>
                                 <AbsDimension x="512" y="512"/>
                             </Size>
@@ -1691,7 +1691,7 @@
                             </Anchors>
                         </FontString>
 
-                        <Texture name="LFGTankBackground2" file="Interface\Addons\AshenBannerLFG\images\tank2">
+                        <Texture name="LFGTankBackground2" file="Interface\Addons\AshenLFG\images\tank2">
                             <Size>
                                 <AbsDimension x="64" y="64"/>
                             </Size>
@@ -1704,7 +1704,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture name="LFGHealerBackground2" file="Interface\Addons\AshenBannerLFG\images\healer2">
+                        <Texture name="LFGHealerBackground2" file="Interface\Addons\AshenLFG\images\healer2">
                             <Size>
                                 <AbsDimension x="64" y="64"/>
                             </Size>
@@ -1717,7 +1717,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture name="LFGDamageBackground2" file="Interface\Addons\AshenBannerLFG\images\damage2">
+                        <Texture name="LFGDamageBackground2" file="Interface\Addons\AshenLFG\images\damage2">
                             <Size>
                                 <AbsDimension x="64" y="64"/>
                             </Size>
@@ -1925,7 +1925,7 @@
                         </Anchors>
                         <Layers>
                             <Layer level="BACKGROUND">
-                                <Texture name="$parentEye" file="Interface\Addons\AshenBannerLFG\images\eye\battlenetworking0">
+                                <Texture name="$parentEye" file="Interface\Addons\AshenLFG\images\eye\battlenetworking0">
                                     <Size x="38" y="38"/>
                                     <Anchors>
                                         <Anchor point="TOPLEFT">
@@ -2173,7 +2173,7 @@
                 </Anchors>
                 <Layers>
                     <Layer level="BACKGROUND">
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-character-activetab">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-character-activetab">
                             <Size>
                                 <AbsDimension x="128" y="64"/>
                             </Size>
@@ -2186,7 +2186,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\ui-character-inactivetab">
+                        <Texture file="Interface\Addons\AshenLFG\images\ui-character-inactivetab">
                             <Size>
                                 <AbsDimension x="128" y="32"/>
                             </Size>
@@ -2199,7 +2199,7 @@
                             </Anchors>
                         </Texture>
 
-                        <Texture file="Interface\Addons\AshenBannerLFG\images\battlenet-portrait">
+                        <Texture file="Interface\Addons\AshenLFG\images\battlenet-portrait">
                             <Size>
                                 <AbsDimension x="64" y="64"/>
                             </Size>
@@ -2214,7 +2214,7 @@
 
                     </Layer>
                     <Layer level="ARTWORK">
-                        <Texture name="LFGFrame" file="Interface\Addons\AshenBannerLFG\images\ui-frame-threebutton-blank">
+                        <Texture name="LFGFrame" file="Interface\Addons\AshenLFG\images\ui-frame-threebutton-blank">
                             <Size>
                                 <AbsDimension x="512" y="512"/>
                             </Size>
@@ -2227,7 +2227,7 @@
                             </Anchors>
                         </Texture>
                         <Texture name="LFGDungeonsButtonHighlight" hidden="true"
-                                 file="Interface\Addons\AshenBannerLFG\images\ui-character-tab-realhighlight">
+                                 file="Interface\Addons\AshenLFG\images\ui-character-tab-realhighlight">
                             <Size>
                                 <AbsDimension x="128" y="32"/>
                             </Size>
@@ -2432,7 +2432,7 @@
             <Layer level="ARTWORK">
 
                 <Texture name="$parentPlayer" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\tank_small">
+                         file="Interface\Addons\AshenLFG\images\tank_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
@@ -2446,7 +2446,7 @@
                 </Texture>
 
                 <Texture name="$parentTarget" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\tank_small">
+                         file="Interface\Addons\AshenLFG\images\tank_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
@@ -2460,7 +2460,7 @@
                 </Texture>
 
                 <Texture name="$parentParty1" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\damage_small">
+                         file="Interface\Addons\AshenLFG\images\damage_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
@@ -2474,7 +2474,7 @@
                 </Texture>
 
                 <Texture name="$parentParty2" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\damage_small">
+                         file="Interface\Addons\AshenLFG\images\damage_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
@@ -2488,7 +2488,7 @@
                 </Texture>
 
                 <Texture name="$parentParty3" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\damage_small">
+                         file="Interface\Addons\AshenLFG\images\damage_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
@@ -2502,7 +2502,7 @@
                 </Texture>
 
                 <Texture name="$parentParty4" hidden="true"
-                         file="Interface\Addons\AshenBannerLFG\images\damage_small">
+                         file="Interface\Addons\AshenLFG\images\damage_small">
                     <Size>
                         <AbsDimension x="32" y="32"/>
                     </Size>
