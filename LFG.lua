@@ -2272,7 +2272,7 @@ function LFG.init()
 
     _G['LFGGroupReadyAwesome']:Disable()
 
-    --lfprint(COLOR_HUNTER .. 'Ashen LFG v' .. addonVer .. COLOR_WHITE .. ' - LFG Addon for Project Epoch loaded.')
+    --lfprint(COLOR_HUNTER .. 'Ashen LFG v' .. addonVer .. COLOR_WHITE .. ' - LFG Addon for Octo WoW loaded.')
 
     local dungeonsButton = _G['LFGBrowseButton']
 
@@ -5199,7 +5199,7 @@ SlashCmdList["LFG"] = function(cmd)
 end
 
 function LFG.sendAdvertisement(chan)
-    SendChatMessage('I am using Ashen LFG - LFG Addon for Project Epoch v' .. addonVer, chan, LFG_GetChatLanguage())
+    SendChatMessage('I am using Ashen LFG - LFG Addon for Octo WoW v' .. addonVer, chan, LFG_GetChatLanguage())
     SendChatMessage('Get it at: https://github.com/Bennylavaa/LFG', chan, LFG_GetChatLanguage())
 end
 
